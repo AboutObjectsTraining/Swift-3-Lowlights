@@ -32,7 +32,8 @@ class StringTests: XCTestCase
         let stars = "✭✭✭✭✭✩✩✩✩✩"
         let charView1 = stars.characters.dropFirst(2)
         print(charView1)
-        
+        // CharacterView(_core: Swift._StringCore(_baseAddress: Optional(0x0000000101362454), _countAndFlags: 9223372036854775816, _owner: nil), _coreOffset: 2)
+
         let charView2 = charView1.dropLast(3)
         print(charView2)
         

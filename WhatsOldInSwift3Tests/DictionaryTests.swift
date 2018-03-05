@@ -203,6 +203,11 @@ extension DictionaryTests
         let dogsKey = "dogs"
         let dogName = "fido"
         
+        
+        guard let index = dict.index(forKey: dogsKey) else { return }
+        print(dict.values[index])
+        
+        
         // Append to existing value if present; otherwise, add new element
         // Swift 3:
         //
